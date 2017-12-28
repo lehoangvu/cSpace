@@ -14,6 +14,6 @@ function run(cmd) {
   });
 }
 
-run('mkdir package')
-run('cd package && npm install jquery')
-run('cd package && ls')
+//run('mkdir package')
+run('npm install jquery')
+run('ls')
