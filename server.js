@@ -3,7 +3,7 @@ console.log('Now, I will build your earth')
 
 const { exec } = require('child_process');
 function run(cmd) {
-  exec('cmd', (error, stdout, stderr) => {
+  exec(cmd, (error, stdout, stderr) => {
     if (error) {
       console.error('error');
       console.error(error);
