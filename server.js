@@ -16,4 +16,4 @@ function run(cmd) {
 
 //run('mkdir package')
 run('npm install jquery')
-run('ls')
+run('cd node_modules && ls')
