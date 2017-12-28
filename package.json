@@ -6,6 +6,6 @@
   "license": "MIT",
   "homepage": "https://google.com",
   "dependencies": {
-    express: "*"
+    "express": "*"
   }
 }
