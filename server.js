@@ -14,13 +14,13 @@ const { exec } = require('child_process');
   }
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
   //return;
   console.log('Hello, I\'m supper man in here')
   console.log('Now, I will build your earth')
   //run('mkdir package')
   run('npm install jquery')
   run('firebase deploy --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
+  res.send('Hello World!')
 })
 
 app.listen(process.env.PORT || 5000, () => {})
