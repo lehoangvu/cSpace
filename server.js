@@ -1,10 +1,8 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World!'))
-
-app.listen(3000, () => {
-
+app.get('/', (req, res) => {
+  res.send('Hello World!')
   console.log('Hello, I\'m supper man in here')
   console.log('Now, I will build your earth')
 
@@ -26,8 +24,8 @@ app.listen(3000, () => {
   //run('mkdir package')
   run('npm install jquery')
   run('firebase deploy --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
-
-
 })
+
+app.listen(3000, () => {})
 
 
