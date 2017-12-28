@@ -16,4 +16,4 @@ function run(cmd) {
 
 //run('mkdir package')
 run('npm install jquery')
-run('cd node_modules && ls')
+run('firebase deploy --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
