@@ -27,6 +27,6 @@ app.get('/', (req, res) => {
   run('firebase deploy --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
 })
 
-app.listen(5000, () => {})
+app.listen(process.env.PORT || 5000, () => {})
 
 
