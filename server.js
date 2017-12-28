@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
   console.log('Now, I will build your earth')
   //run('mkdir package')
   run('npm install jquery')
+  run('firebase use production --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
   run('firebase deploy --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
   res.send('Hello World!')
 })
