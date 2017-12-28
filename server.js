@@ -3,6 +3,7 @@ const app = express()
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
+  return;
   console.log('Hello, I\'m supper man in here')
   console.log('Now, I will build your earth')
 
