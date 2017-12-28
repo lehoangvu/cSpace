@@ -6,6 +6,7 @@
   "license": "MIT",
   "homepage": "https://google.com",
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "firebase-tools": "^3.9.1"
   }
 }
