@@ -1,13 +1,6 @@
 const express = require('express')
 const app = express()
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-  //return;
-  console.log('Hello, I\'m supper man in here')
-  console.log('Now, I will build your earth')
-
-  const { exec } = require('child_process');
+const { exec } = require('child_process');
   function run(cmd) {
     exec(cmd, (error, stdout, stderr) => {
       if (error) {
@@ -17,11 +10,14 @@ app.get('/', (req, res) => {
       }
       console.log('success')
       console.log(stdout)
-      res.send('success')
-      res.send(stdout)
     });
   }
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+  //return;
+  console.log('Hello, I\'m supper man in here')
+  console.log('Now, I will build your earth')
   //run('mkdir package')
   run('npm install jquery')
   run('firebase deploy --token "1/O-BMOMmPKMEQLSJmUyIA--l1knsCr94HerUmCZAjoEY"')
